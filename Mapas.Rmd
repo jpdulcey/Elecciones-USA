@@ -1,0 +1,37 @@
+# Mapas
+
+
+```{r}
+library(usmap)
+library(ggplot2)
+library(shapefiles)
+library(maptools)
+dt_current<-dt %>% filter(maptype.y=="current") 
+dt_current<-dt %>% filter(maptype.y=="current")
+```
+
+
+```{r}
+plot_usmap(data = dt_current, values = "efficiency_gap", color = "black") + 
+ scale_fill_viridis_c()+ labs(title = "Brecha de eficacia en la eleccion",fill="Eficencia")
+  theme(legend.position = "right")
+```
+
+```{r}
+plot_usmap(data = dt_current, values = "dem_chance", color = "black") + 
+  scale_fill_continuous(name = "Chance de lo democratas", label = scales::comma) + 
+  theme(legend.position = "right")
+```
+
+```{r}
+plot_usmap(data = dt_current, values = "PVI", color = "black") + 
+  scale_fill_continuous(name = "Indice partisano", label = scales::comma) + 
+  theme(legend.position = "right")
+```
+
+```{r}
+plot_usmap(data = dt_current, values = "compactness_rank", color = "black") + 
+  scale_fill_discrete(name="Compacto")+
+  theme(legend.position = "right")
+``` 
+

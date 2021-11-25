@@ -1,0 +1,18 @@
+--- 
+title: "Análisis de las Elecciones de Estados Unidos según el Gerrymandering "
+author: "María José Meisel - Juan Pablo Dulcey"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+description: |
+ Se mostrará el mapa de los Estados Unidos según las distintas divisiones
+link-citations: yes
+
+---
+
+# Objetivo
+
+El objetivo es analizar como se obtienen las diferentes divisiones de los colegios electorales y cuál de los partidos obtienen un mayor beneficio según los distintos trazados
+
+
